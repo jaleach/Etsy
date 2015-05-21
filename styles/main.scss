@@ -1,0 +1,64 @@
+@import "vendor/bourbon/bourbon";
+@import "vendor/neat/neat";
+
+@mixin buttonStyle(){
+ border-radius: 3px;
+ height: 38px;
+ background-color: #FFF;
+ border: 1px solid rgba(0, 0, 0, 0.15);
+ border-bottom-color: rgba(0, 0, 0, 0.2);
+ box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+// header{
+//   width: 40px;
+
+
+.navhead{
+  width: 960px;
+  margin: 0 auto;
+  height: 80px;
+
+  form {
+  margin-left: 48px;
+  margin-top: -32px;
+  float: left;}
+input {
+  height: 32px;
+}
+button {
+  height: 32px;
+  background-color: #3AA7C1;
+  margin-left: -4px;
+  margin-right: 3px;
+}
+}
+.etsy{
+  margin-left: -41px;
+  font-size: 37px;
+  margin-top: 30px;
+  color: #F2581D;
+}
+
+.browse{
+
+  display: inline-block;
+   width: 68px;
+  margin-right: 10px;
+  @include buttonStyle;
+  a{
+    text-decoration: none;
+    padding: 8px;
+
+  }
+}
+.register{
+  color: #39A4BE;
+  button {
+  background-color: white;
+  }
+}
+
+
+.content {
+  background-color: #F5F5F1;
+}
