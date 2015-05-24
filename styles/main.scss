@@ -25,14 +25,20 @@ a{
   margin-top: -41px;
   float: left;}
 input {
-  height: 32px;
+  height: 36px;
   }
 button {
-  height: 33px;
+  border-radius: 3px;
+  height: 36px;
   background-color: #3AA7C1;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   margin-left: -5px;
   margin-right: 3px;
   color: white;
+  font-size: 15px;
+  width: 78px;
   }
 }
 .etsy{
@@ -48,16 +54,24 @@ button {
    width: 80px;
 
   margin-top: -41px;
-  margin-left: 319px;
+  margin-left: 330px;
   margin-right: 10px;
     font-size: 14px;
   padding-top: 8px;
+  position: relative;
   @include buttonStyle;
   a{
     text-decoration: none;
     padding: 6px;
 
   }
+}
+.browse:after {
+ content: "▾";
+ position: absolute;
+ top: 9px;
+ right: 7px;
+ color: #B7B8B2;
 }
 .reg{
     margin-left: 184px;
@@ -81,6 +95,8 @@ button {
   background-color: white;
   color: #40A7C0;
   margin-left: 10px;
+  width: 61px;
+  border-color: #40A7C0;
 
   }
 
@@ -90,20 +106,30 @@ button {
     font-size: 13px;
     h5{
     font-size: 13px;
+    }
   }
+
+
+.Sortby{
+  a{
+    background-color: transparent;
   }
+  li{
+    display: inline-block;
 
-
-
+  }
+}
 .content {
   @include outer-container;
   }
 .outtercontent{
-  background-color: #F5F5F1;
+  background: #F5F5F1;
 }
 
 .collright{
     @include span-columns(9);
+
+    margin-top: 7px;
 
   }
   .panelleftup{
@@ -147,17 +173,134 @@ button {
 .radios{
     font-size: 15px;
     margin-left: 15px;
+  font-size: 14px;
+  margin-right: 155px;
     h5{
       margin-left: 150px;
     }
+}
 
-    }
+.pd2 input{
+  border-radius: 3px;
+ height: 36px;
+ background-color: #FFF;
+ border: 1px solid rgba(0, 0, 0, 0.15);
+ border-bottom-color: rgba(0, 0, 0, 0.2);
+ box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+ width: 70px;
+ margin-left: 15px;
+
+}
+.to{
+  display: inline-block;
+}
+.epcolor{
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  height: 22px;
+  width: 22px;
+  padding: 1px;
+  overflow: hidden;
+  background-color: black;
+
+}
 
 .maine{
   @include outer-container;
+  font-size: 12px;
+
 
 }
+.etitle{
+  color: #555;
+  font-size: 12px;
+  margin-bottom: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-left: 6px;
+  margin-right: 6px;
+}
+.eprice{
+  color: #7ABE4A;
+  float: right;
+  padding-left: 0px;
+  margin-right: 7px;
+}
+.eseller{
+
+  font-size: 12px;
+  margin-bottom: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  float: left;
+  color: #b2b2b2;
+  margin-left: 6px;
+}
+.epic1{
+  border-radius: 3px;
+ background-color: #FFF;
+ border: 1px solid rgba(0, 0, 0, 0.15);
+ border-bottom-color: rgba(0, 0, 0, 0.2);
+ box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+
+  padding-right: 14px;
+  padding-left: 4px;
+  padding-top: 4px;
+    padding-bottom: 1px;
+
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  img{
+  width: 14px;
+  }
+}
+.epic1:after {
+ content: "▾";
+ position: absolute;
+ top: 2px;
+ right: 3px;
+ color: #B7B8B2;
+}
+.epic2{
+  border-radius: 3px;
+ background-color: #FFF;
+ border: 1px solid rgba(0, 0, 0, 0.15);
+ border-bottom-color: rgba(0, 0, 0, 0.2);
+ box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  padding-right: 5px;
+  padding-left: 4px;
+  padding-top: 4px;
+  padding-bottom: 1px;
+  position: absolute;
+  top: 5px;
+  right: 43px;
+  img{
+  width: 14px;
+  }
+}
+
 .everything{
   @include span-columns(3);
   @include omega(3n);
+  background-color: #FFFFFF;
+  width: 225px;
+  margin-right: 21px;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  display: inline-block;
+  position: relative;
+  span{
+    z-index: -1;
+  }
 }
+.everything:hover span{
+  z-index: 100;
+}
+
+
+  .epic{
+    width: 225px;
+  }
