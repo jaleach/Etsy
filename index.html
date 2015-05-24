@@ -7,26 +7,25 @@
   <link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+<div class="container">
 <header>
   <div class="navhead">
     <div class="etsy">Etsy</div>
       <form action="https://etsy.com">
-      <input type="text" name="q">
-      <button>Search</button>
+        <input type="text" name="q">
+        <button>Search</button>
       </form>
       <div class="browse">
         <a href="#">Browse</a>
       </div>
       <div class="register">Register
-      <button>Sign In</button>
-        <div class="reg">
+          <button>Sign In</button>
+          <div class="reg">
           <img src="images/cart.png">
           <h5>Cart</h5>
-
-
-        </div>
+          </div>
       </div>
-  </div>
+    </div>
   </header>
 
   <div class="outtercontent">
@@ -37,53 +36,76 @@
 
         <div class="panelleftup">
           <h5 >All Catagories</h5>
-        <ul>
-          <li><a href="#">Art & Collectibles</a></li>
-          <li><a href="#">Clothing</a></li>
-          <li><a href="#">Home & Living</a></li>
-          <li><a href="#">Books, Movies & Music</a></li>
-          <li><a href="#">Jewelry</a></li>
-          <li><a href="#">Accessories</a></li>
-          <li><a href="#">Craft Supplies & Tools</a></li>
-          <li><a href="#">Bags & Purses</a></li>
-          <li><a href="#">Paper & Party Supplies</a></li>
-          <li><a href="#">Bath & Beauty</a></li>
-          <li><a href="#">Toys & Games</a></li>
-          <li><a href="#">Weddings</a></li>
-          <li><a href="#">Electronics & Accessories</a></li>
-          <li><a href="#">Shoes</a></li>
-          <li><a href="#">Pet Supplies</a></li>
-        </ul>
+          <ul>
+            <li><a href="#">Art & Collectibles</a></li>
+            <li><a href="#">Clothing</a></li>
+            <li><a href="#">Home & Living</a></li>
+            <li><a href="#">Books, Movies & Music</a></li>
+            <li><a href="#">Jewelry</a></li>
+            <li><a href="#">Accessories</a></li>
+            <li><a href="#">Craft Supplies & Tools</a></li>
+            <li><a href="#">Bags & Purses</a></li>
+            <li><a href="#">Paper & Party Supplies</a></li>
+            <li><a href="#">Bath & Beauty</a></li>
+            <li><a href="#">Toys & Games</a></li>
+            <li><a href="#">Weddings</a></li>
+            <li><a href="#">Electronics & Accessories</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Pet Supplies</a></li>
+          </ul>
         </div>
       <h5>Refine your search</h5>
         <div class="panelleftdown">
           <div class="pd1">
-          <h5>Item Type</h5>
-          <label class="radios">
-            <input type="radio" checked="checked">
-            <a href="#" class="greytext">All Items</a>
+            <h5>Item Type</h5>
             <label class="radios">
-            <input type="radio">
-            <a href="#" class="greytext">Handmade</a>
-
-          </label>
-          <label class="radios">
-            <input type="radio">
-            <a href="#" class="greytext">Vintage</a>
+              <input type="radio" checked="checked">
+              <a href="#" class="greytext">All Items</a>
+            </label>
+            <label class="radios">
+              <input type="radio">
+              <a href="#" class="greytext">Handmade</a>
+            </label>
+            <label class="radios">
+              <input type="radio">
+              <a href="#" class="greytext">Vintage</a>
+            </label>
           </div>
           <div class="pd2">
-          <h5>Price</h5>
-          <input type="pricey"> to <input type="priced">
+            <h5>Price</h5>
+            <input type="pricey">
+            <div class="to">
+              <h5>to</h5>
+            </div> <input type="priced">
+            <button></button>
+          </div>
+
+      <div class="Allcat"><h5>All Catagories</h5>
+
+        <div class="Sortby">Sort by</div>
+
+           <li class="list-inline-item mr-xs-0">
+          <a href="https://www.etsy.com/search?q=elvis&amp;color=f40b32" title="View only red items" style="background-color: #f40b32;" class="swatch display-block red">
+              <span class="icon-smaller ss-icon "></span>
+              &nbsp;
+          </a>
+          </li>
 
 
-        </div>
+
+
+
+
 
       </div>
-      <div class="Allcat">All Catagories</div>
-      <h5>Sort by:</h5>
-      <div class="Sortby">Sort by</div>
+      </div>
+      </div>
       <div class="collright">
+      <div class="maine">
 
+
+
+      </div>
 
 
 
@@ -94,11 +116,13 @@
 
 
       </div>
-    </div>
+      </div>
+      </div>
 
   </div>
-  <script type="scripts/api.js"></script>
   <script src="scripts/vendor/jquery.min.js"></script>
+    <script src="scripts/api.js"></script>
+
   <script src="scripts/main.js"></script>
 
 </body>

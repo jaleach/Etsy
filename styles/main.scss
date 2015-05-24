@@ -59,18 +59,7 @@ button {
 
   }
 }
-.register{
-  color: #39A4BE;
-
-  margin-left: 700px;
-  margin-top: -36px;
-  button {
-  background-color: white;
-  color: #40A7C0;
-  margin-left: 10px;
-
-  }
-  .reg{
+.reg{
     margin-left: 184px;
     margin-top: -35px;
 
@@ -83,33 +72,42 @@ button {
     margin-top: -1px;
     }
   }
+.register{
+  color: #39A4BE;
+
+  margin-left: 700px;
+  margin-top: -36px;
+  button {
+  background-color: white;
+  color: #40A7C0;
+  margin-left: 10px;
+
+  }
+
 }
 
+.Allcat{
+    font-size: 13px;
+    h5{
+    font-size: 13px;
+  }
+  }
 
 
 
 .content {
-  background-color: #F5F5F1;
-  .Allcat{
-    color: #32A4C0;
-    font-size: 13px;
-  }
-  h5{
-    font-size: 13px;
-  }
-
-  }
-
   @include outer-container;
+  }
+.outtercontent{
+  background-color: #F5F5F1;
+}
+
 .collright{
     @include span-columns(9);
 
   }
-.colleft{
-
   .panelleftup{
     background-color: #FFFFFF;
-    margin-left: 150px;
     margin-top: 20px;
     width: 250px;
     h5{
@@ -117,40 +115,49 @@ button {
     }
 
   }
-
-    @include span-columns(3);
+  .panelleftdown{
+      margin-top: 10px;
+      background-color: #FFFFFF;
+    margin-top: 20px;
+    width: 250px;
+    h5{
+      margin-left: 15px;
+    }
+  }
+.colleft{
+  @include span-columns(3);
 
     a{
     color: #0192B5;
      }
-    li{
-      margin-top: 9px;
-      }
-
-    .panelleftdown{
-      margin-top: 10px;
-      background-color: #FFFFFF;
-      margin-left: 150px;
-    margin-top: 20px;
-    width: 250px;
-    h5{
-      margin-left: 15px;
-    }
-    .radios{
-    font-size: 15px;
-    margin-left: 15px;
-    }
-    }
-    h5{
-      margin-left: 150px;
-    }
-  }
-ul{
+     ul{
   list-style-type: none;
   color: #0192B5;
   font-size: 14px;
   margin-left: -17px;
+    }
+    li{
+      margin-top: 9px;
+      }
+
+
+    }
+
+
+.radios{
+    font-size: 15px;
+    margin-left: 15px;
+    h5{
+      margin-left: 150px;
+    }
+
+    }
+
+.maine{
+  @include outer-container;
+
 }
-
-
-
+.everything{
+  @include span-columns(3);
+  @include omega(3n);
+}
