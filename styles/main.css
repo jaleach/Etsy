@@ -10,10 +10,13 @@ html {
 a {
   text-decoration: none; }
 
+a:hover {
+  text-decoration: underline; }
+
 .navhead {
   width: 960px;
   margin: 0 auto;
-  height: 35px; }
+  height: 41px; }
 
 .navhead form {
   margin-left: 61px;
@@ -37,10 +40,11 @@ a {
   width: 78px; }
 
 .etsy {
-  margin-left: -41px;
-  font-size: 37px;
+  margin-left: -28px;
+  font-size: 41px;
   margin-top: 21px;
-  color: #F2581D; }
+  color: #F2581D;
+  font-family: 'Tinos', serif; }
 
 .browse {
   width: 80px;
@@ -59,7 +63,8 @@ a {
 
 .browse a {
   text-decoration: none;
-  padding: 6px; }
+  padding: 6px;
+  color: #666666; }
 
 .browse:after {
   content: "▾";
@@ -69,17 +74,21 @@ a {
   color: #B7B8B2; }
 
 .reg {
-  margin-left: 184px;
-  margin-top: -35px; }
+  margin-left: 152px;
+  margin-top: -35px;
+  border-left: solid 1px #cbcbcb;
+  height: 39px; }
 
 .reg img {
   border: 0;
-  width: 22px; }
+  width: 22px;
+  margin-left: 12px; }
 
 .reg h5 {
   color: #888888;
   font-weight: 500;
-  margin-top: -1px; }
+  margin-top: -1px;
+  margin-left: 12px; }
 
 .register {
   color: #39A4BE;
@@ -92,6 +101,56 @@ a {
   margin-left: 10px;
   width: 61px;
   border-color: #40A7C0; }
+
+.register:hover button {
+  background-color: lightblue; }
+
+.shores {
+  margin-bottom: 37px;
+  padding-top: 9px;
+  position: relative; }
+
+.shores h5 {
+  display: inline-block;
+  position: absolute;
+  top: 23px; }
+
+.shores a {
+  display: inline-block;
+  font-size: 14px;
+  position: absolute;
+  left: 280px;
+  top: 45px;
+  color: #40A7C0; }
+
+.shores h6 {
+  display: inline-block;
+  position: absolute;
+  font-size: 13px;
+  right: 568px;
+  top: 16px; }
+
+.shores h4 {
+  display: inline-block;
+  position: absolute;
+  right: 178px;
+  font-size: 13px;
+  top: 30px; }
+
+.shores h3 {
+  display: inline-block;
+  position: absolute;
+  right: 111px;
+  font-size: 13px;
+  top: 34px;
+  color: #40A7C0; }
+
+.rarrow:after {
+  content: "▾";
+  position: absolute;
+  top: 44px;
+  right: 97px;
+  color: #B7B8B2; }
 
 .Allcat {
   font-size: 13px; }
@@ -116,7 +175,8 @@ a {
   display: table; }
 
 .outtercontent {
-  background: #F5F5F1; }
+  background: #F5F5F1;
+  margin-top: 21px; }
 
 .collright {
   float: left;
@@ -131,10 +191,12 @@ a {
 .panelleftup {
   background-color: #FFFFFF;
   margin-top: 20px;
-  width: 250px; }
+  width: 250px;
+  padding-bottom: 1px; }
 
 .panelleftup h5 {
-  margin-left: 15px; }
+  margin-left: 7px;
+  padding-top: 14px; }
 
 .panelleftdown {
   margin-top: 10px;
@@ -145,6 +207,11 @@ a {
 .panelleftdown h5 {
   margin-left: 15px;
   margin-top: 13px; }
+
+input[type="radio"] {
+  box-sizing: border-box;
+  margin-bottom: 11px;
+  padding: 0; }
 
 .pd1 {
   padding-top: 1px; }
@@ -157,6 +224,9 @@ a {
 
 .colleft:last-child {
   margin-right: 0; }
+
+.colleft h5 {
+  margin-bottom: 6px; }
 
 .colleft a {
   color: #0192B5; }
@@ -226,7 +296,16 @@ a {
   border-bottom-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   width: 40px;
-  margin-left: 17px; }
+  margin-left: 17px;
+  position: relative;
+  top: 9px; }
+
+.pd2 button:after {
+  content: "▶";
+  position: absolute;
+  top: 9px;
+  right: 7px;
+  color: #555555; }
 
 .epcolor {
   border: 1px solid #e2e2e2;
@@ -247,7 +326,8 @@ a {
   margin-right: 3px;
   color: white;
   font-size: 15px;
-  width: 18px; }
+  width: 18px;
+  margin-bottom: 9px; }
 
 .opt1 {
   display: inline-block;
@@ -266,6 +346,14 @@ a {
 .shop {
   padding-bottom: 13px; }
 
+.aline {
+  width: 90%;
+  height: 1px;
+  background: #CBCBCB;
+  margin-left: 12px;
+  margin-top: 16px;
+  margin-bottom: 16px; }
+
 .shipit {
   border-radius: 3px;
   height: 36px;
@@ -279,7 +367,8 @@ a {
   position: relative; }
 
 .ship {
-  margin-left: 14px; }
+  margin-left: 14px;
+  margin-bottom: 9px; }
 
 .shipit:after {
   content: "▾";
@@ -287,6 +376,12 @@ a {
   top: 9px;
   right: 7px;
   color: #B7B8B2; }
+
+.shipit span {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  font-size: 14px; }
 
 .maine {
   max-width: 68em;
@@ -307,13 +402,16 @@ a {
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-left: 6px;
-  margin-right: 6px; }
+  margin-right: 6px;
+  margin-top: 4px;
+  margin-bottom: -5px; }
 
 .eprice {
   color: #7ABE4A;
   float: right;
   padding-left: 0px;
-  margin-right: 7px; }
+  margin-right: 7px;
+  margin-bottom: 6px; }
 
 .eseller {
   font-size: 12px;
