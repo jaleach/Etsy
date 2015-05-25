@@ -143,7 +143,11 @@ a {
   width: 250px; }
 
 .panelleftdown h5 {
-  margin-left: 15px; }
+  margin-left: 15px;
+  margin-top: 13px; }
+
+.pd1 {
+  padding-top: 1px; }
 
 .colleft {
   float: left;
@@ -161,7 +165,7 @@ a {
   list-style-type: none;
   color: #0192B5;
   font-size: 14px;
-  margin-left: -17px; }
+  margin-left: -27px; }
 
 .colleft li {
   margin-top: 9px; }
@@ -175,6 +179,30 @@ a {
 .radios h5 {
   margin-left: 150px; }
 
+.red {
+  background-color: red; }
+
+.orange {
+  background-color: orange; }
+
+.yellow {
+  background-color: yellow; }
+
+.green {
+  background-color: #20C024; }
+
+.blue {
+  background-color: #26CCF1; }
+
+.purple {
+  background-color: #A527EF; }
+
+.black {
+  background-color: black; }
+
+.pd2 {
+  bottom: 10px; }
+
 .pd2 input {
   border-radius: 3px;
   height: 36px;
@@ -183,10 +211,22 @@ a {
   border-bottom-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   width: 70px;
-  margin-left: 15px; }
+  margin-left: 12px;
+  margin-right: -15px; }
 
 .to {
-  display: inline-block; }
+  display: inline-block;
+  margin-right: -11px; }
+
+.pd2 button {
+  border-radius: 3px;
+  height: 36px;
+  background-color: #FFF;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  width: 40px;
+  margin-left: 17px; }
 
 .epcolor {
   border: 1px solid #e2e2e2;
@@ -194,8 +234,59 @@ a {
   height: 22px;
   width: 22px;
   padding: 1px;
-  overflow: hidden;
-  background-color: black; }
+  overflow: hidden; }
+
+.orderop button {
+  border-radius: 3px;
+  height: 17px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin-left: 12px;
+  margin-right: 3px;
+  color: white;
+  font-size: 15px;
+  width: 18px; }
+
+.opt1 {
+  display: inline-block;
+  list-style-type: none;
+  color: #0192B5;
+  margin-left: 0px; }
+
+.custom {
+  display: inline-block;
+  color: #0192B5; }
+
+.choose {
+  color: #0192B5;
+  margin-left: 14px; }
+
+.shop {
+  padding-bottom: 13px; }
+
+.shipit {
+  border-radius: 3px;
+  height: 36px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin-left: 12px;
+  margin-right: 3px;
+  font-size: 15px;
+  width: 225px;
+  position: relative; }
+
+.ship {
+  margin-left: 14px; }
+
+.shipit:after {
+  content: "▾";
+  position: absolute;
+  top: 9px;
+  right: 7px;
+  color: #B7B8B2; }
 
 .maine {
   max-width: 68em;
